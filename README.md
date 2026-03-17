@@ -79,5 +79,5 @@ cp transcrire.sh ~/
 
 ## License
 
-MIT (to be added)
+MIT
 
