@@ -64,7 +64,7 @@ cp transcrire.sh ~/
 
 ```bash
 ~/transcrire.sh "/path/to/file.m4a"
-~/transcrire.sh "/path/to/file.mp4"
+~/transcrire.sh "/path/to/file.mov"
 ```
 
 ## Output
