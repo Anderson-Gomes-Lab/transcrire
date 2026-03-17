@@ -2,6 +2,12 @@
 
 Simple CLI to transcribe audio and video locally using whisper.cpp (macOS).
 
+## Quick install
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Anderson-Gomes-Lab/transcrire/main/install.sh | bash
+```
+
 ## Features
 
 * Works with audio and video files
