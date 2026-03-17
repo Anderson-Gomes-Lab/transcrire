@@ -1,17 +1,61 @@
 # transcrire
 
-Petit script shell pour transcrire des fichiers audio et vidéo en local avec whisper.cpp.
+Simple CLI to transcribe audio and video locally using whisper.cpp (macOS).
 
-## Prérequis
+## Features
 
-- macOS
-- Homebrew
-- ffmpeg
-- whisper-cpp
-- un modèle Whisper dans `~/whisper-models`
+* Works with audio and video files
+* Fully local (no cloud, no data sent anywhere)
+* Uses whisper.cpp for fast transcription
+* Automatic audio extraction and conversion
+* Outputs clean `.txt` files
 
-## Utilisation
+## Requirements
+
+* macOS
+* Homebrew
+* ffmpeg
+* whisper-cpp
+* A Whisper model (e.g. `ggml-large-v3-turbo.bin`) stored in:
+
+```
+~/whisper-models/
+```
+
+## Installation
+
+Clone the repository:
 
 ```bash
-~/transcrire.sh "/chemin/vers/fichier.m4a"
-~/transcrire.sh "/chemin/vers/fichier.mp4"
+git clone https://github.com/Anderson-Gomes-Lab/transcrire.git
+cd transcrire
+chmod +x transcrire.sh
+```
+
+Move the script to your home directory:
+
+```bash
+cp transcrire.sh ~/
+```
+
+## Usage
+
+```bash
+~/transcrire.sh "/path/to/file.m4a"
+~/transcrire.sh "/path/to/file.mp4"
+```
+
+## Output
+
+* Generates a `.txt` file in the same folder
+* Temporary `.wav` file is automatically deleted
+
+## Notes
+
+* Large files may take time depending on your machine
+* Recommended model: `large-v3-turbo` for best quality
+
+## License
+
+MIT (to be added)
+
