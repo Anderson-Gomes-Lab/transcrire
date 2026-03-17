@@ -22,6 +22,22 @@ Simple CLI to transcribe audio and video locally using whisper.cpp (macOS).
 ~/whisper-models/
 ```
 
+## Setup (first time only)
+
+Install dependencies:
+
+```bash
+brew install ffmpeg whisper-cpp
+```
+
+Download a model:
+
+```bash
+mkdir -p ~/whisper-models
+curl -L -o ~/whisper-models/ggml-large-v3-turbo.bin \
+https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo.bin
+```
+
 ## Installation
 
 Clone the repository:
